@@ -41,7 +41,7 @@ export const Home = () => {
                 {books.map((book) => (
                     <Col>
                         <BookCard
-                            key={book.id}
+                            id={book.id}
                             image={book.volumeInfo.imageLinks?.thumbnail}
                             title={book.volumeInfo.title}
                             price={book.saleInfo.listPrice?.amount
